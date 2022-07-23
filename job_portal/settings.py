@@ -84,11 +84,8 @@ WSGI_APPLICATION = 'job_portal.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'job_portal_django',
-        'USER': 'postgres',
-        'PASSWORD': 'karishma123',
-        'HOST': 'localhost',
+         'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
